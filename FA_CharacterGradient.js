@@ -20,7 +20,6 @@ FA.CharGradient.version = 1.0;
 //=============================================================================
 
 (function() {
-
 FA.CharGradient.Game_CharacterBase_initMembers = Game_CharacterBase.prototype.initMembers;
 Game_CharacterBase.prototype.initMembers = function() {
     FA.CharGradient.Game_CharacterBase_initMembers.call(this);
@@ -28,7 +27,6 @@ Game_CharacterBase.prototype.initMembers = function() {
     this._opacityCount = 0;
     this._opacityChange = 0;
 };
-
 
 FA.CharGradient.Game_CharacterBase_update = Game_CharacterBase.prototype.update;
 Game_CharacterBase.prototype.update = function() {
@@ -38,11 +36,9 @@ Game_CharacterBase.prototype.update = function() {
     FA.CharGradient.Game_CharacterBase_update.call(this);
 };
 
-
 Game_CharacterBase.prototype.isOpacityChanging = function() {
     return this._opacityCount > 0;
 };
-
 
 Game_CharacterBase.prototype.updateOpacity = function() {
     this._opacityCount--;
@@ -56,5 +52,4 @@ Game_CharacterBase.prototype.opacityGradient = function(target, frame) {
     this._opacityCount = frame;
     this._opacityChange = (target - this._opacity) / frame;
 };
-
 })();
