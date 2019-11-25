@@ -51,7 +51,7 @@ Game_CharacterBase.prototype.updateOpacity = function() {
 };
 
 Game_CharacterBase.prototype.opacityGradient = function(target, frame) {
-	if (target === this._opacity) return;
+    if (target === this._opacity) return;
     this._opacityTarget = target.clamp(0, 255);
     this._opacityCount = frame;
     this._opacityChange = (target - this._opacity) / frame;
