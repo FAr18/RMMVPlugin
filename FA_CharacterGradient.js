@@ -8,12 +8,13 @@ FA.CharGradient.version = 1.0;
 //=============================================================================
 /*:
  * @plugindesc v1.0 Character 不透明度漸變
- * @auther FA
+ * @author FA
  * 
  * @help
- * 對人物使用opacityGradient方法可以在接下來進行不透明度的轉變
+ * 對人物使用 opacityGradient 方法可以在接下來進行不透明度的轉變
  * example:
- * $gameMap.event(1).opacityGradient(0, 60); //經過60幀後將地圖上ID為1的事件不透明度降為0
+ * 經過60幀後將地圖上ID為1的事件不透明度降為0
+ * $gameMap.event(1).opacityGradient(0, 60); 
  * 
  */
 //=============================================================================
